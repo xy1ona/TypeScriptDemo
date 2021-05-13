@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+    <script src="./build/page.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // new Home.Page()
+
+        //require 方式引入
+        require(['page'], function (page) {
+            new page.default();
+        })
+    </script>
+</body>
+</html>
